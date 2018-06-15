@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rugby4___" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingTop="32dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/Quinns_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Quinns"
+                android:textColor="#19fd00"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Quinns_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#f7f710"
+                android:textSize="56sp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/Quinns_try"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Try"
+                android:onClick="quinTry"
+                android:background="@drawable/trybutton"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/Quinns_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conversion"
+                android:onClick="quinConversion"
+                android:background="@drawable/convertbutton"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/Quinns_dropGoal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Drop goal"
+                android:onClick="quinDropGoal"
+                android:background="@drawable/dropgoalbutton"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/Quinns_penalty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/penaltybutton"
+                android:textColor="#fff"
+                android:text="Penalty"
+                android:onClick="quinPenalty"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/mwamba_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Mwamba"
+                android:textStyle="bold"
+                android:textColor="#19fd00"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/mwamba_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#f7f710"
+                android:textSize="56sp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/mwamba_try"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Try"
+                android:onClick="mwambaTry"
+                android:background="@drawable/trybutton"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/mwamba_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Conversion"
+                android:onClick="mwambaConversion"
+                android:background="@drawable/convertbutton"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/mwamba_dropGoal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Drop goal"
+                android:onClick="mwambaDropGoal"
+                android:background="@drawable/dropgoalbutton"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/mwamba_penalty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Penalty"
+                android:background="@drawable/penaltybutton"
+                android:textColor="#fff"
+                android:onClick="mwambaPenalty"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="#FFF"
+        android:background="@drawable/resetbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="reset"/>
+
+</RelativeLayout>
